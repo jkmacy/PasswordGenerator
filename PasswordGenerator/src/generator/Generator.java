@@ -37,11 +37,12 @@ public class Generator {
 			if (temp.matches("[0-9]+")) fav = Integer.parseInt(temp);
 		} while (temp.length()!=2);
 		
-		addFavDDNum(fav); out.println("Adding your favorite double-digit number: " + manString);
+		addFavDDNum(fav); out.println("Adding your favorite double-digit number: \n" + manString);
 		
 		digit2Symbol(); out.print("Converting second digit into the corresponding shift value on the keyboard: ");
 		input.nextLine();
 		out.println(manString);
+		input.close();
 	}
 	
 	public static void reverse() {
